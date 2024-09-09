@@ -1,0 +1,145 @@
+.rightBar {
+    flex: 3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: #f6f3f3;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Media Queries */
+@media (max-width:480px) {
+    .rightBar {
+        display: none;
+    }
+}
+
+@media (max-width:960px) {
+    .rightBar {
+        display: none;
+    }
+}
+
+.rightBar.dark {
+    flex: 3;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: #333;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+
+.rightBar .container .item {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.rightBar.dark .container .item {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #222;
+}
+
+.rightBar .container .item span {
+    color: gray;
+}
+
+.rightBar.dark .container .item span {
+    color: white;
+}
+
+.rightBar .container .item .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.rightBar .container .item .user .userInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.rightBar .container .item .user .userInfo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rightBar .container .item .user .userInfo .online {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.rightBar .container .item .user .userInfo p {
+    color: gray;
+}
+
+.rightBar.dark .container .item .user .userInfo p {
+    color: #555;
+}
+
+.rightBar.dark .container .item .user .userInfo p {
+    color: lightgray;
+}
+
+.rightBar .container .item .user .userInfo p span {
+    font-weight: 500;
+    color: #000;
+    margin-right: 5px;
+}
+
+.rightBar.dark .container .item .user .userInfo p span {
+    font-weight: 500;
+    color: whitesmoke;
+    margin-right: 5px;
+}
+
+.rightBar .container .item .user .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rightBar .container .item .user .buttons button {
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+
+    &:first-child {
+        background-color: #5271ff;
+    }
+
+    &:last-child {
+        background-color: #f0544f;
+    }
+}

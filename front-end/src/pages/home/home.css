@@ -1,0 +1,26 @@
+.home.dark {
+    background-color: #333;
+    padding: 20px 70px;
+}
+
+.home {
+    background-color: #f6f3f3;
+    padding: 20px 70px;
+}
+
+/* Media Queries */
+@media (max-width:480px) {
+
+    .home,
+    .home.dark {
+        padding: 10px;
+    }
+}
+
+@media (max-width:960px) {
+
+    .home,
+    .home.dark {
+        padding: 20px;
+    }
+}
