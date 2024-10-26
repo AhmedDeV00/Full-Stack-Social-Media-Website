@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 })
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:3002",
+    origin: "https://travel-tour-6xx0.onrender.com",
     credentials: true,
 }))
 app.use(cookieParser())
