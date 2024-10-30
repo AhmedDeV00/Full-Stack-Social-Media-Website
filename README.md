@@ -46,3 +46,22 @@ View Other Posts By Follow Users And React On That Posts.
 
 Update/Edit Profile Page User Data.
 
+
+clone :  https://github.com/AhmedDeV00/Full-Stack-Social-Media-Website.git
+
+Go to the Server directory :  cd back-end
+
+Install dependencies  : npm install
+
+Start the server  :  npm start
+
+
+Go to the Server directory :  cd front-end
+
+Install dependencies  : npm install
+
+Start the server  :  npm start
+
+
+
+
